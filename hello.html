@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+	<title>webpage?</title>
+	<style type="text/css">
+		h1 {text-align: center;
+			font-family: fantasy;
+			color: #7FFFD4;
+			bottom: 500px;
+			font-size: 24px;}
+		body {
+			height: 100%;
+
+		}
+		label {text-align: center;
+			right: 100px;}
+		.bg{background-size: cover;
+			background-position: center;
+  			
+		}
+		#text{position: fixed;
+			top:800px;
+		}
+
+	</style>
+	<script type="text/javascript">
+		
+		function bgchange(color){
+			color = prompt("what color to change to? ")
+			document.getElementById("bg1").style.backgroundColor = color ;
+
+		}
+	</script>
+</head>
+<html>
+<body id="bg1" style="background-color: blueviolet;">
+
+	<img id="bg" src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9yZXN0JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80">
+	<h1 class="text">is this a webpage?</h1>
+	<p>please tell your opinion</p>
+	<form>
+		<label class="text" for="1">is this a webpage?</label>
+		<input class="text" type="text" id="1"></input>
+	</form>
+	<h2 class="text">how are you today?</h2>
+	<label class="text" for="2">yes/no</label>
+	<input class="text" type="text" id="2"></input>
+	<button onclick="bgchange()" id="colorchange">color</button>
+</body>
+	
+
+
+</html>
